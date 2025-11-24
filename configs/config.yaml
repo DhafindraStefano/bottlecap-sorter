@@ -1,0 +1,25 @@
+experiment_name: "baseline-yolo"
+
+data:
+  train_dir: "data/train/images"
+  val_dir: "data/val/images"
+  labels_dir: "data/labels"
+  img_size: 640
+
+training:
+  batch_size: 16
+  epochs: 50
+  learning_rate: 0.001
+  num_workers: 4
+
+model:
+  type: "yolo_n"        # or "custom_lightweight"
+  pretrained: true
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+
+logging:
+  use_wandb: true
+  project_name: "bottlecap-sorter"
