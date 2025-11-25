@@ -20,12 +20,32 @@ dependencies = [
     "seaborn",
     "wandb",
     "click",
+    "pyyaml",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
     "flake8",
+    "black",
+    "isort",
+    "pylint",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pylint.messages_control]
+disable = [
+    "C0114", # missing-module-docstring
+    "C0115", # missing-class-docstring
+    "C0116", # missing-function-docstring
+    "R0903", # too-few-public-methods
 ]
 
 [project.scripts]

@@ -1,0 +1,17 @@
+# Bottlecap Sorter Configuration
+
+# Data Settings
+data:
+  data_dir: "dataset/processed"
+  test_size: 0.2
+
+# Training Settings
+train:
+  epochs: 10
+  batch_size: 32 # Placeholder for future DL models
+  learning_rate: 0.001 # Placeholder
+
+# Logging
+logging:
+  use_wandb: false
+  project_name: "bottlecap-sorter"

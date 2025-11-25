@@ -12,6 +12,9 @@ src/bsort.egg-info/entry_points.txt
 src/bsort.egg-info/requires.txt
 src/bsort.egg-info/top_level.txt
 src/bsort/utils/__init__.py
+src/bsort/utils/config.py
 src/bsort/utils/logging.py
 src/bsort/utils/metrics.py
 src/bsort/utils/visualization.py
+tests/test_data.py
+tests/test_model.py

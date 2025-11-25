@@ -1,22 +1,40 @@
 import logging
 import sys
+
 import wandb
 
+
 def setup_logger(name: str = "bsort", level: int = logging.INFO) -> logging.Logger:
-    """Configures and returns a logger."""
+    """
+    Configures and returns a logger.
+
+    Args:
+        name (str): Name of the logger.
+        level (int): Logging level.
+
+    Returns:
+        logging.Logger: Configured logger instance.
+    """
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    
+
     if not logger.handlers:
         handler = logging.StreamHandler(sys.stdout)
         formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         )
         handler.setFormatter(formatter)
         logger.addHandler(handler)
-        
+
     return logger
 
+
 def init_wandb(project_name: str = "bottlecap-sorter", config: dict = None):
-    """Initializes a Weights & Biases run."""
+    """
+    Initializes a Weights & Biases run.
+
+    Args:
+        project_name (str): Name of the WandB project.
+        config (dict): Configuration dictionary to log.
+    """
     wandb.init(project=project_name, config=config)
