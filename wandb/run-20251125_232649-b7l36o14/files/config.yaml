@@ -1,0 +1,28 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            44apvp14dg9dqkeq5wus5wwzcx88p9mi:
+                codePath: verify_wandb.py
+                codePathLocal: verify_wandb.py
+                email: dhafindra.razaqa@gmail.com
+                executable: /Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/.venv/bin/python
+                git:
+                    commit: 0d0ba47c3702ef02786615d1b869315aa7abb88c
+                    remote: https://github.com/DhafindraStefano/bottlecap-sorter.git
+                host: Dhafindras-MacBook-Pro.local
+                os: macOS-26.1-arm64-arm-64bit-Mach-O
+                program: /Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/verify_wandb.py
+                python: CPython 3.13.3
+                root: /Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier
+                startedAt: "2025-11-25T15:26:49.170520Z"
+                writerId: 44apvp14dg9dqkeq5wus5wwzcx88p9mi
+        m: []
+        python_version: 3.13.3
+        t:
+            "3":
+                - 2
+            "4": 3.13.3
+            "5": 0.23.0
+            "12": 0.23.0
+            "13": darwin-arm64

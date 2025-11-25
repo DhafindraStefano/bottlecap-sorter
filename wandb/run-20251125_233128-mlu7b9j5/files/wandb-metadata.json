@@ -1,0 +1,41 @@
+{
+  "os": "macOS-26.1-arm64-arm-64bit-Mach-O",
+  "python": "CPython 3.13.3",
+  "startedAt": "2025-11-25T15:31:28.547455Z",
+  "args": [
+    "train",
+    "--wandb"
+  ],
+  "program": "/Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/.venv/bin/bsort",
+  "codePath": ".venv/bin/bsort",
+  "codePathLocal": ".venv/bin/bsort",
+  "git": {
+    "remote": "https://github.com/DhafindraStefano/bottlecap-sorter.git",
+    "commit": "0d0ba47c3702ef02786615d1b869315aa7abb88c"
+  },
+  "email": "dhafindra.razaqa@gmail.com",
+  "root": "/Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier",
+  "host": "Dhafindras-MacBook-Pro.local",
+  "executable": "/Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/.venv/bin/python3.13",
+  "cpu_count": 14,
+  "cpu_count_logical": 14,
+  "disk": {
+    "/": {
+      "total": "994662584320",
+      "used": "579355693056"
+    }
+  },
+  "memory": {
+    "total": "25769803776"
+  },
+  "apple": {
+    "name": "Apple M4 Pro",
+    "ecpuCores": 4,
+    "pcpuCores": 10,
+    "gpuCores": 20,
+    "memoryGb": 24,
+    "swapTotalBytes": "4294967296",
+    "ramTotalBytes": "25769803776"
+  },
+  "writerId": "1tfgxbab5qo7ya8ocem4qm8v6an67re9"
+}

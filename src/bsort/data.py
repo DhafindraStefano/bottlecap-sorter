@@ -63,6 +63,18 @@ def get_all_image_paths(data_dir: pathlib.Path) -> List[pathlib.Path]:
     return list(data_dir.glob("*.jpg"))
 
 
+def get_primary_class(image_path: pathlib.Path) -> int:
+    """
+    Helper to get the class ID for stratification.
+    Assumes the first label in the file is the primary object.
+    """
+    label_path = image_path.with_suffix(".txt")
+    labels = load_label(label_path)
+    if labels:
+        return int(labels[0][0])
+    return -1
+
+
 def split_dataset(
     image_paths: List[pathlib.Path], test_size: float = 0.2, random_state: int = 42
 ):
@@ -79,7 +91,30 @@ def split_dataset(
     """
     if not image_paths:
         return [], []
-    return train_test_split(image_paths, test_size=test_size, random_state=random_state)
+
+    # Try to get labels for stratification
+    labels = [get_primary_class(p) for p in image_paths]
+
+    # Filter valid data (images with labels)
+    valid_data = [(img, lbl) for img, lbl in zip(image_paths, labels) if lbl != -1]
+
+    if not valid_data:
+        # Fallback to random split if no labels found
+        return train_test_split(
+            image_paths, test_size=test_size, random_state=random_state
+        )
+
+    X_valid, y_valid = zip(*valid_data)
+
+    try:
+        return train_test_split(
+            X_valid, test_size=test_size, random_state=random_state, stratify=y_valid
+        )
+    except ValueError:
+        # Fallback if stratification fails (e.g. single sample class)
+        return train_test_split(
+            image_paths, test_size=test_size, random_state=random_state
+        )
 
 
 def extract_roi(

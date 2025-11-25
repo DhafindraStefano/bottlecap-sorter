@@ -1,0 +1,57 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            1tfgxbab5qo7ya8ocem4qm8v6an67re9:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 20
+                    memoryGb: 24
+                    name: Apple M4 Pro
+                    pcpuCores: 10
+                    ramTotalBytes: "25769803776"
+                    swapTotalBytes: "4294967296"
+                args:
+                    - train
+                    - --wandb
+                codePath: .venv/bin/bsort
+                codePathLocal: .venv/bin/bsort
+                cpu_count: 14
+                cpu_count_logical: 14
+                disk:
+                    /:
+                        total: "994662584320"
+                        used: "579355693056"
+                email: dhafindra.razaqa@gmail.com
+                executable: /Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/.venv/bin/python3.13
+                git:
+                    commit: 0d0ba47c3702ef02786615d1b869315aa7abb88c
+                    remote: https://github.com/DhafindraStefano/bottlecap-sorter.git
+                host: Dhafindras-MacBook-Pro.local
+                memory:
+                    total: "25769803776"
+                os: macOS-26.1-arm64-arm-64bit-Mach-O
+                program: /Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/.venv/bin/bsort
+                python: CPython 3.13.3
+                root: /Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier
+                startedAt: "2025-11-25T15:31:28.547455Z"
+                writerId: 1tfgxbab5qo7ya8ocem4qm8v6an67re9
+        m: []
+        python_version: 3.13.3
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 16
+            "4": 3.13.3
+            "5": 0.23.0
+            "12": 0.23.0
+            "13": darwin-arm64
+model:
+    value: ColorThreshold
+test_size:
+    value: 0.2
