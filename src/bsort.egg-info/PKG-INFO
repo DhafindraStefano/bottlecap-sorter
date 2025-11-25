@@ -2,7 +2,7 @@ Metadata-Version: 2.4
 Name: bsort
 Version: 0.1.0
 Summary: Bottlecap Sorter - ML Pipeline
-Author-email: Dr Stefano <drstefano@example.com>
+Author-email: Dhafindra Stefano <dhafindra.razaqa@gmail.com>
 License: MIT
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
@@ -13,6 +13,9 @@ Requires-Dist: matplotlib
 Requires-Dist: seaborn
 Requires-Dist: wandb
 Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
 
 # Bottlecap Sorter - ML Pipeline
 

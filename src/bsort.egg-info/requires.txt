@@ -5,3 +5,7 @@ matplotlib
 seaborn
 wandb
 click
+
+[dev]
+pytest
+flake8

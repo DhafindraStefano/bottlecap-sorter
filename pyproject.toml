@@ -22,6 +22,12 @@ dependencies = [
     "click",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+]
+
 [project.scripts]
 bsort = "bsort.cli:main"
 

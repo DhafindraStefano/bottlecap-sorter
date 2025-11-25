@@ -1,5 +1,10 @@
 README.md
 pyproject.toml
+src/bsort/cli.py
+src/bsort/data.py
+src/bsort/inference.py
+src/bsort/model.py
+src/bsort/train.py
 src/bsort.egg-info/PKG-INFO
 src/bsort.egg-info/SOURCES.txt
 src/bsort.egg-info/dependency_links.txt
