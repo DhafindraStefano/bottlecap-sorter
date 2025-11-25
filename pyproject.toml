@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bsort"
+version = "0.1.0"
+description = "Bottlecap Sorter - ML Pipeline"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Dhafindra Stefano", email = "dhafindra.razaqa@gmail.com"}
+]
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "wandb",
+    "click",
+]
+
+[project.scripts]
+bsort = "bsort.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
