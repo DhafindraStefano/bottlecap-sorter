@@ -19,7 +19,7 @@ This project implements a Machine Learning pipeline for sorting bottlecaps by co
 1.  **Clone the repository:**
     ```bash
     git clone <repository-url>
-    cd bottlecap-sorter
+    cd bottlecap-classifier
     ```
 
 2.  **Create a virtual environment (recommended):**

@@ -1,5 +1,6 @@
 README.md
 pyproject.toml
+src/bsort/benchmark.py
 src/bsort/cli.py
 src/bsort/data.py
 src/bsort/inference.py

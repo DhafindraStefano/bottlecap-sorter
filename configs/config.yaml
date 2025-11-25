@@ -13,7 +13,7 @@ training:
   num_workers: 4
 
 model:
-  type: "yolo_n"        # or "custom_lightweight"
+  type: "yolo_n" # or "custom_lightweight"
   pretrained: true
 
 inference:
@@ -22,4 +22,4 @@ inference:
 
 logging:
   use_wandb: true
-  project_name: "bottlecap-sorter"
+  project_name: "bottlecap-classifier"

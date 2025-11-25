@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bsort"
 version = "0.1.0"
-description = "Bottlecap Sorter - ML Pipeline"
+description = "Bottlecap Classifier - ML Pipeline"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}

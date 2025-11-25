@@ -17,6 +17,6 @@ def setup_logger(name: str = "bsort", level: int = logging.INFO) -> logging.Logg
         
     return logger
 
-def init_wandb(project_name: str = "bottlecap-sorter", config: dict = None):
+def init_wandb(project_name: str = "bottlecap-classifier", config: dict = None):
     """Initializes a Weights & Biases run."""
     wandb.init(project=project_name, config=config)

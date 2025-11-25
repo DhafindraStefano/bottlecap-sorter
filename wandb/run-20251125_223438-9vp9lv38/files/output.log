@@ -1,0 +1,9 @@
+2025-11-25 22:34:40,359 - bsort - INFO - Data split: 9 training, 3 validation
+2025-11-25 22:34:40,359 - bsort - INFO - Evaluating on validation set...
+2025-11-25 22:34:40,373 - bsort - INFO - Validation Metrics: {'accuracy': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+/Users/drstefano/Documents/Work/Technical Tests/bottlecap-classifier/src/bsort/utils/visualization.py:66: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x="Class", y="Count", data=df, palette="viridis")
+2025-11-25 22:34:41,556 - bsort - INFO - Training pipeline completed successfully.

@@ -14,4 +14,4 @@ train:
 # Logging
 logging:
   use_wandb: false
-  project_name: "bottlecap-sorter"
+  project_name: "bottlecap-classifier"
